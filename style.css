@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    margin : auto;
+    width : 60%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    object-fit: cover;
+    align-items: center;
+}
+
+.all {
+    display: flex;
+    width: 100%;
+}
+
+
+.A {
+    background: #efc579;
+    text-align : center;
+
+}
+
+.B {
+    background: #4747a6;
+    text-align : center;
+}
+
+.C  {
+    background: #055705;
+    text-align : center;
+}
+
+.media-icons {
+    position : relative;
+    left : 32px;
+    margin-top: 12px;
+    display: flex;
+    z-index: 5;
+} 
+
+.media-icons::after {
+    content : "";
+    background: gray;
+    position: absolute;
+    top: -2px;
+    left: 1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition:  ease 2s;
+    transform: translateX(-60%);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+h2 {
+    padding-top :24px;
+    padding-bottom: 12px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-variant: small-caps; */
+}
+
+p {
+    color: white;
+    line-height: 1.5;
+    padding: 12px 20px;
+    margin-bottom: 48px;
+}
+
+button{
+    color : wheat;
+    border-radius: 20px;
+    background-color: inherit;
+    padding: 8px;
+    border: 1px white solid;
+    position: relative;
+    display: flex;
+    margin-top: 40px;
+    margin: auto;
+    bottom: 32px;
+    outline: none;
+}
+
+.car {
+    color: green;
+}
+
+.bus {
+    color: #2e4341;
+}
+
+.truck {
+    color: black;
+}
+
+.btn > a {
+    text-decoration: none;
+    outline: none;
+    border: 1px solid burlywood;
+    background-color: #2e4341;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
